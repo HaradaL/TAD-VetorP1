@@ -30,39 +30,39 @@ Importante: Você deve ser capaz de validar se sua função funciona ou não. Pa
 Para facilitar a identificação, utilizaremos o prefixo "vetor_" para cada função.
 
 <h3>PARTE 1</h3>
-<p>Criar o vetor</p>
+<h4>Criar o vetor</h4>
 
 ```
   Vetor* vetor_new();
 ```
 
-<p>Destruir o vetor</p>
+<h4>Destruir o vetor</h4>
 
 ```
   void vetor_free(Vetor* v);
 ```
 
-<p>Imprimir o vetor</p>
+<h4>Imprimir o vetor</h4>
 
 ```
   void vetor_print(Vetor* m);
 ```
 
-<p>Adicionar um elemento em uma posição do vetor</p>
+<h4>Adicionar um elemento em uma posição do vetor</h4>
 A funcionalidade de inserção deve providenciar espaço sempre que necessário. Crie uma função auxiliar para isso e utilize a estratégia de dobrar o tamanho do vetor sempre que houver necessidade de espaço.
 
 ```
   Boolean vetor_insert(Vetor* v, DataType element, int index);
 ```
 
-<p>Adicionar um elemento no final do vetor</p>
+<h4>Adicionar um elemento no final do vetor</h4>
 A funcionalidade de inserção deve providenciar espaço sempre que necessário. Crie uma função auxiliar para isso e utilize a estratégia de dobrar o tamanho do vetor sempre que houver necessidade de espaço.
 
 ```
   Boolean vetor_add(Vetor* v, DataType element);
 ```
 
-<p>Remover um elemento do vetor de uma posição específica</p>
+<h4>Remover um elemento do vetor de uma posição específica</h4>
 A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso a remoção resulte em uma taxa de ocupação abaixo de 25%, o tamanho do vetor deve ser reduzido pela metade. Crie uma função auxiliar para verificar e efeturar a redução.
 
 ```
@@ -70,7 +70,7 @@ A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso 
   Boolean vetor_remove2(Vetor* v, int index, Datatype* ptr);
 ```
 
-<p>Remover o elemento da primeira posição do vetor</p>
+<h4>Remover o elemento da primeira posição do vetor</h4>
 A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso a remoção resulte em uma taxa de ocupação abaixo de 25%, o tamanho do vetor deve ser reduzido pela metade. Crie uma função auxiliar para verificar e efeturar a redução.
 
 ```
@@ -78,7 +78,7 @@ A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso 
   Boolean vetor_shift2(Vetor* v, Datatype* ptr);
 ```
 
-<p>Acessar um elemento do vetor</p>
+<h4>Acessar um elemento do vetor</h4>
 Essa funcionalidade deve ser disponibilizada por meio de três funções. As funções provêm o mesmo comportamento, porém, de formas distintas.
 
 ```
@@ -87,13 +87,13 @@ Essa funcionalidade deve ser disponibilizada por meio de três funções. As fun
   Datatype* vetor_get3(Vetor* v, int index);
 ```
 
-Alterar um elemento no vetor
+<h4>Alterar um elemento no vetor</h4>
 
 ```
   void vetor_set(Vetor* v, int index, DataType valor);
 ```
 
-Aplicar uma alteração à todos os elementos do vetor.
+<h4>Aplicar uma alteração à todos os elementos do vetor.</h4>
 Essa funcionalidade pode ser obtida por meio de uma função que recebe por parâmetro um ponteiro da função que realizará a alteração em cada elemento. Essa funcionalidade já foi discutida em sala de aula.
 
 ```
@@ -102,7 +102,7 @@ Essa funcionalidade pode ser obtida por meio de uma função que recebe por par�
 
 A função recebe o vetor e o ponteiro da função que será invocada para cada elemento.
 
-Criar um sub‒vetor.
+<h4>Criar um sub‒vetor.</h4>
 O sub‒vetor pode ser adquirido com base nos índices do vetor.
 A primeira função recebe o vetor v e o índice index e cria o sub‒vetor a partir de index. Quando o indice é negativo, ele representará as posições do fim para o inicio. Por exemplo, o índice ́‒1́ representa a última posição do vetor, ‒2 a penúltima e assim por diante.
 
