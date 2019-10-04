@@ -6,7 +6,8 @@
 
 <h2>DADOS</h2><br>
 Os dados do vetor serão organizados em uma struct denominada Vetor
-```
+
+```c
   typedef struct{
   int* vetor;
   int size;
