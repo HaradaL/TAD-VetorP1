@@ -30,65 +30,88 @@ Importante: Você deve ser capaz de validar se sua função funciona ou não. Pa
 Para facilitar a identificação, utilizaremos o prefixo "vetor_" para cada função.
 
 <h3>PARTE 1</h3>
-Criar o vetor
+<p>Criar o vetor</p>
+
 ```
   Vetor* vetor_new();
 ```
-Destruir o vetor
+
+<p>Destruir o vetor</p>
+
 ```
   void vetor_free(Vetor* v);
 ```
-Imprimir o vetor
+
+<p>Imprimir o vetor</p>
+
 ```
   void vetor_print(Vetor* m);
 ```
-Adicionar um elemento em uma posição do vetor
+
+<p>Adicionar um elemento em uma posição do vetor</p>
 A funcionalidade de inserção deve providenciar espaço sempre que necessário. Crie uma função auxiliar para isso e utilize a estratégia de dobrar o tamanho do vetor sempre que houver necessidade de espaço.
+
 ```
   Boolean vetor_insert(Vetor* v, DataType element, int index);
 ```
-Adicionar um elemento no final do vetor
+
+<p>Adicionar um elemento no final do vetor</p>
 A funcionalidade de inserção deve providenciar espaço sempre que necessário. Crie uma função auxiliar para isso e utilize a estratégia de dobrar o tamanho do vetor sempre que houver necessidade de espaço.
+
 ```
   Boolean vetor_add(Vetor* v, DataType element);
 ```
-Remover um elemento do vetor de uma posição específica
+
+<p>Remover um elemento do vetor de uma posição específica</p>
 A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso a remoção resulte em uma taxa de ocupação abaixo de 25%, o tamanho do vetor deve ser reduzido pela metade. Crie uma função auxiliar para verificar e efeturar a redução.
+
 ```
   DataType vetor_remove1(Vetor* v, int index);
   Boolean vetor_remove2(Vetor* v, int index, Datatype* ptr);
 ```
-Remover o elemento da primeira posição do vetor
+
+<p>Remover o elemento da primeira posição do vetor</p>
 A remoção deve se preocupar com a quantidade de espaço ocioso no vetor. Caso a remoção resulte em uma taxa de ocupação abaixo de 25%, o tamanho do vetor deve ser reduzido pela metade. Crie uma função auxiliar para verificar e efeturar a redução.
+
 ```
   DataType vetor_shift1(Vetor* v);
   Boolean vetor_shift2(Vetor* v, Datatype* ptr);
 ```
-Acessar um elemento do vetor
+
+<p>Acessar um elemento do vetor</p>
 Essa funcionalidade deve ser disponibilizada por meio de três funções. As funções provêm o mesmo comportamento, porém, de formas distintas.
+
 ```
   Datatype vetor_get1(Vetor* v, int index);
   Boolean vetor_get2(Vetor* v, int index, DataType *ptr);
   Datatype* vetor_get3(Vetor* v, int index);
 ```
+
 Alterar um elemento no vetor
+
 ```
   void vetor_set(Vetor* v, int index, DataType valor);
 ```
+
 Aplicar uma alteração à todos os elementos do vetor.
 Essa funcionalidade pode ser obtida por meio de uma função que recebe por parâmetro um ponteiro da função que realizará a alteração em cada elemento. Essa funcionalidade já foi discutida em sala de aula.
+
 ```
   void vetor_map(Vetor* v, void (*funcao)(DataType*));
 ```
+
 A função recebe o vetor e o ponteiro da função que será invocada para cada elemento.
 
 Criar um sub‒vetor.
 O sub‒vetor pode ser adquirido com base nos índices do vetor.
 A primeira função recebe o vetor v e o índice index e cria o sub‒vetor a partir de index. Quando o indice é negativo, ele representará as posições do fim para o inicio. Por exemplo, o índice ́‒1́ representa a última posição do vetor, ‒2 a penúltima e assim por diante.
+
 ```
   Vetor* vetor_sub1(Vetor* v, int index);
 ```
+
 A segunda função recebe o intervalo desejado para a criação do sub‒vetor.
+
 ```
   Vetor* vetor_sub2(Vetor* v, int start, int end);
 ```
