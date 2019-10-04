@@ -1,16 +1,18 @@
 # TAD-VetorP1
 
-Tipo Abstrato de Dados (Vetor)
-Desenvolver um tipo abstrato de dados para armazenar e manipular vetores de valores inteiros.
+<h1>Tipo Abstrato de Dados (Vetor)</h1> 
 
-DADOS
-Os dados do vetor serão organizados em uma struct denominada Vetor.
+<p>Desenvolver um tipo abstrato de dados para armazenar e manipular vetores de valores inteiros.</p>
 
+<h2>DADOS</h2><br>
+Os dados do vetor serão organizados em uma struct denominada Vetor
+´´´
   typedef struct{
   int* vetor;
   int size;
   int length;
   } Vetor;
+´´´
 
 Vamos utilizar outras duas definições para nos auxiliar na implementação e manutenção do código. O tipo DataType será definido representar o tipo de dado manipulado pelo TAD Vetor. Neste exemplo, o tipo manipulado é o int. Caso queiramos utilizar outro tipo, basta alterar essa linha.
 
