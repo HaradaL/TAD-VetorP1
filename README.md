@@ -1,6 +1,6 @@
 # TAD-VetorP1
 
-<h1>Tipo Abstrato de Dados (Vetor)</h1> 
+<h1>Tipo Abstrato de Dados (Vetor)</h1>
 
 <p>Desenvolver um tipo abstrato de dados para armazenar e manipular vetores de valores inteiros.</p>
 
@@ -26,7 +26,7 @@ O segundo tipo definido é o Boolean. Como a linguagem C não possui um tipo pri
 <h2>OPERAÇÕES</h2>
 Todas as operações previstas para o vetor serão mapeadas para funções. Todas as funções serão desenvolvidas especificamente para manipular a estrutura definida Vetor.
 
-Importante: Você deve ser capaz de validar se sua função funciona ou não. Para isso, crie pequenos casos de teste para validar as funções desenvolvidas.
+<p>**Importante:** Você deve ser capaz de validar se sua função funciona ou não. Para isso, crie pequenos casos de teste para validar as funções desenvolvidas.</p>
 Para facilitar a identificação, utilizaremos o prefixo "vetor_" para cada função.
 
 <h3>PARTE 1</h3>
